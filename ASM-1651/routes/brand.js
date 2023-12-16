@@ -28,19 +28,19 @@ router.get('/detail/:id', async (req, res) => {
 router.get('/delete/:id', async (req, res) => {
    var id = req.params.id;
    //cách 1
-   try {
-      //SQL: DELETE FROM brands WHERE brand = id
-      await BrandModels.findByIdAndDelete(id);
-      console.log('Delete brand succeed !');
-   } catch (err) {
-      console.log('Delete brand fail. Error: ' + err);
-   };
+   // try {
+   //    //SQL: DELETE FROM brands WHERE brand = id
+   //    await BrandModels.findByIdAndDelete(id);
+   //    console.log('Delete brand succeed !');
+   // } catch (err) {
+   //    console.log('Delete brand fail. Error: ' + err);
+   // };
 
    //cách 2
-   // var brand = await BrandModels.findById(id);
-   // await BrandModels.deleteOne(brand);
+   var brand = await BrandModels.findById(id);
+   await BrandModels.deleteOne(brand);
 
-   // res.redirect('/brand');
+   res.redirect('/brand');
 })
 
 router.get('/deleteall', async (req, res) => {
