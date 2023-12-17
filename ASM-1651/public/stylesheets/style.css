@@ -1,5 +1,5 @@
 body {
-  padding: 50px;
+  padding: 0px 50px 50px 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -9,4 +9,12 @@ a {
 
 .yellow-bg-table {
   background-color: yellow;
+}
+
+.search-bar {
+  width: 350px;
+}
+
+.container {
+  display: block; 
 }

@@ -9,43 +9,48 @@
 </head>
 
 <body>
-  
-  <div class=" navbar navbar-expand-lg col-md-12 text-center">
-        <!-- navigation bar (top) -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-brand container-fluid">
-          <div class="container-fluid">
-            
-            <!-- Logo (bên trái) -->
-            <a class="navbar-brand" href="/">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+      <div class="container-fluid cd-md-3">
+        <a class="navbar-brand" href="/">
               <img src="https://theme.hstatic.net/1000160337/1000885200/14/logo.png?v=341" alt="" height="80" class="d-inline-block align-text-top">  
             </a>
-
-            <!-- Thanh tìm kiếm (ở giữa) -->
-            <form class=" col-md-3" action="/toys/search" method="post">
-              <input class="form-control" type="search" name="keyword" id="" required placeholder="Search by Toys">
-            </form>
-            <br><br>
-            <!-- Nav-items (bên phải) -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-toggler collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/toys">Toys</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/brand">Brand</a>
-                </li>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link mx-2 active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="/toys">Toys</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="/brand">Brand</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Company
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+                <li><a class="dropdown-item" href="#">About Us</a></li>
+                <li><a class="dropdown-item" href="#">Contact us</a></li>
               </ul>
-            </div>
-          </div>
-        </nav>
-    </div>
-      
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto d-none d-lg-inline-flex col-3 ">
+            <form class="search-bar d-flex" action="/toys/search" method="post">
+              <input class="form-control" type="search" name="keyword" id="" required placeholder="Search by Toys">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+              
+          </ul>
+        </div>
+      </div>
+    </nav>
+      <br> <br>
         
     {{{body}}}
 
@@ -59,11 +64,11 @@
           <div class="col-lg-6 col-md-12 mb-4">
             <h5 class="mb-3 text-dark">Giới thiệu Figure Việt Nam</h5>
             <p>
-              Giúp các bạn trẻ Việt Nam dễ dàng tiếp cận với mô hình figure Nhật Bản
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quia facere dignissimos at vel hic amet iusto placeat, deleniti reprehenderit, incidunt magni. Necessitatibus, voluptate? Repellat nesciunt deserunt excepturi quisquam consectetur.
             </p>
           </div>
           <div class="col-lg-3 col-md-6 mb-4">
-            <h5 class="mb-3 text-dark">Các Nguồn</h5>
+            <h5 class="mb-3 text-dark">Các Nguồn Tham Khảo</h5>
             <ul class="list-unstyled mb-0">
               <li class="mb-1">
                 <a href="https://www.youtube.com/" style="color: #4f4f4f;">Youtube</a>
@@ -71,20 +76,15 @@
               <li class="mb-1">
                 <a href="https://www.facebook.com/" style="color: #4f4f4f;">FaceBook</a>
               </li>
-              <li class="mb-1">
-                <a href="#!" style="color: #4f4f4f;">Pricing</a>
-              </li>
-              <li>
-                <a href="#!" style="color: #4f4f4f;">Safety</a>
-              </li>
+              
             </ul>
           </div>
           <div class="col-lg-3 col-md-6 mb-4">
             <h5 class="mb-1 text-dark">Follow Việt Nam Figure trên Instagram</h5>
-            <h6 class="mb- text-dark"> Địa chỉ: Quận 10, Tp. Hồ Chí Minh.
-                                        Japan Figure chưa có không gian trưng bày, bạn vui lòng hẹn trước khi đến
-                                        Điện thoại: 090 xxx xxx
-                                        Email: support@vietnamfigure.vn</h6>
+            <p class="mb-1 "> Địa chỉ: Quận 10, Tp. Hồ Chí Minh. Việt Nam Figure chưa có không gian trưng bày, bạn vui lòng hẹn trước khi đến
+                                        <p>Điện thoại: 090 xxx xxx</p>
+                                        <p>Email: support@vietnamfigure.vn</p> 
+            </p>
           </div>
         </div>
       </div>
