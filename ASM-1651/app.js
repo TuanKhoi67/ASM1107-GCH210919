@@ -8,6 +8,12 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
+// 
+
+var hbs = require('hbs');
+hbs.registerHelper('dateFormat', require('handlebars-dateformat')); 
+var hbs = require('hbs');
+hbs.registerHelper('equal', require('handlebars-helper-equal'))
 
 // 1A. config location of routers
 var toyRouter = require('./routes/toy');

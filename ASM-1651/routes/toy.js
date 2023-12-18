@@ -10,11 +10,7 @@ router.get('/', async (req, res) => {
    res.render('toy/index', { toys });
 })
 
-router.get('/customer', async (req, res) => {
-   var toys = await ToysModel.find({}).populate('brand');
-   //Path: views/toy/index.hbs
-   res.render('toys/list', { toys });
-})
+
 
 router.get('/add', async (req, res) => {
    var brands = await BrandModels.find({});
