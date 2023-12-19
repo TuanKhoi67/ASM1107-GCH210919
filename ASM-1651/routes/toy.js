@@ -10,8 +10,6 @@ router.get('/', async (req, res) => {
    res.render('toy/index', { toys });
 })
 
-
-
 router.get('/add', async (req, res) => {
    var brands = await BrandModels.find({});
    res.render('toy/add', { brands });
