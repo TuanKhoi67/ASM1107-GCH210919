@@ -6,7 +6,6 @@ var BrandModels = require('../models/BrandModels');
 //URL: localhost:3001/toy
 router.get('/', async (req, res) => {
    var toys = await ToysModel.find({}).populate('brand');
-   //Path: views/toy/index.hbs
    res.render('toy/index', { toys });
 })
 
